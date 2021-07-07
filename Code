@@ -1,0 +1,14 @@
+from threading import Thread
+
+thread2 = Thread(target = ariba.threaded_function2)
+thread2.start()
+thread = Thread(target = ariba.threaded_function(driver))
+thread.start()
+
+
+def threaded_function(driver):
+        driver.get(data_loaded['url'])
+def threaded_function2():
+        time.sleep(5)
+        for i in range(0,10):
+            pyautogui.press('enter')
